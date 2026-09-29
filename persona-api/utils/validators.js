@@ -1,15 +1,3 @@
-[8:25 p. m., 28/9/2026] MariaCaro Sena: const REGEX_SOLO_LETRAS = /^[A-Za-zÀ-ÿñÑ\s]+$/;
-
-// Formato de fecha esperado: YYYY-MM-DD (el mismo que usa un <input type="date">)
-const REGEX_FECHA_ISO = /^\d{4}-\d{2}-\d{2}$/;
-[8:26 p. m., 28/9/2026] MariaCaro Sena: // ==========================================================
-// utils/validators.js
-// Validadores personalizados para los datos de Persona.
-// Se usan desde la capa de "services" ANTES de tocar la base
-// de datos, siguiendo el principio de no confiar nunca en los
-// datos que llegan del cliente (req.body).
-// ==========================================================
-
 const { REGLAS_PERSONA } = require('./constants');
 
 // Acepta letras (incluye tildes y enie) y espacios, para nombres/apellidos
